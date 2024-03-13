@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.popup {
+    display: none;
+    background-color: #f9f9f9;
+    border: 1px solid #0037FC;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.popup h2 {
+    margin-top: 0;
+}
+
+.popup input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.popup button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0037FC;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    opacity: 0.8;
+}
+
+#signin, #signup{
+    position: relative;
+}
+#signin .close, #signup .close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color:0037FC;
+    font-size: 30px;
+    cursor: pointer;
+}

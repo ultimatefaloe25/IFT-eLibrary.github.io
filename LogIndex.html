@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="register.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -22,44 +21,16 @@
                 <div class="right-nav-bar-con" id="bar">
                     <img src="./Images/Menu-close.png" alt="" id="close" onclick="CloseMenu()">
                     <ul>
-                        <li><a class="hov" href="#">ABOUT US</a></li>
-                        <li><a class="hov" href="#">CONTACT</a></li>
-                        <li><a class="hov" href="#">CATALOGUE</a></li>
-                        <li><a class="hov" href="#">POLICIES</a></li>
-                        <li><a class="hov" href="#">RESEARCH</a></li>
-                        <li><a class="hov" href="#">CALENDER</a></li>
-                        <li id="login-link" class="button" ><b class="login">LOGIN</b></li>
-                        <li id="signup-link" class="button" ><b class="register">REGISTER</b></li>
+                        <li><a class="hov" href="About-us.html">ABOUT US</a></li>
+                        <li><a class="hov" href="contact.html">CONTACT</a></li>
+                        <li><a class="hov" href="catalogue.html">CATALOGUE</a></li>
+                        <li><a class="hov" href="policy.html">POLICIES</a></li>
+                        <li><a class="hov" href="research.html">RESEARCH</a></li>
+                        <li><a class="hov" href="calender.html">CALENDER</a></li>
                     </ul>
+                    <img src="./Images/User.png" alt="" class="img">
                 </div>
-            </div>
-
-
-            <!---Login/SignUp content-->
-            <div id="con" class="container">
-                <div id="signup" class="popup">
-                    <h2>Sign Up</h2>
-                    <form id="signup-form">
-                        <span class="close">&times;</span>
-                        <input type="text" id="fullname" placeholder="Full Name" required>
-                        <input type="email" id="email" placeholder="Email" required>
-                        <input type="tel" id="phone" placeholder="Phone Number" required>
-                        <input type="password" id="password" placeholder="Password" required>
-                        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
-                        <button type="submit">Sign Up</button>
-                    </form>
-                </div>
-                <div id="signin" class="popup">
-                    <h2>Sign In</h2>
-                    <form id="signin-form">
-                        <span class="close">&times;</span>
-                        <input type="email" id="signin-email" placeholder="Email" required>
-                        <input type="password" id="signin-password" placeholder="Password" required>
-                        <button type="submit">Sign In</button>
-                    </form>
-                </div>
-            </div>
-                
+            </div>   
         </div>
     </section>
 
@@ -162,4 +133,3 @@
 </body>
 </html>
 <script src="menu.js"></script>
-<script src="Register.js"></script>

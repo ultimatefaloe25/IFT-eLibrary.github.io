@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>2022/1/87905CF</title>
+</head>
+<body>
+    <section id="header">
+        <div class="nav-bar">
+            <div class="left-nav-bar">
+                <img class="logo-img" src="./Images/IFT-logo.png" alt="IFT LOGO" onclick="location.reload()">
+                <h1>INFORMATION TECHNOLOGY E-LIBRARY</h1>
+            </div>
+            <div class="right-nav-bar">
+                <img src="./Images/Menu-open.png" alt="" id="open" onclick="OpenMenu()">
+            <div class="right-nav-bar-con" id="bar">
+                <img src="./Images/Menu-close.png" alt="" id="close" onclick="CloseMenu()">
+                <ul>
+                    <li><a class="hov" href="LogIndex.html">HOME</a></li>
+                    <li><a class="hov" href="About-us.html">ABOUT US</a></li>
+                    <li><a class="hov" href="contact.html">CONTACT</a></li>
+                    <li><a class="hov" href="policy.html">POLICIES</a></li>
+                    <li><a class="hov" href="research.html">RESEARCH</a></li>
+                    <li><a class="hov" href="calender.html">CALENDER</a></li>
+                </ul>
+                <img src="./Images/User.png" alt="" class="img">
+            </div>
+        </div>
+    </section>
+
+    <section id="sub-header">
+        <div class="sub-head-con">
+            <div class="search">
+                <input type="search" name="search" id="" placeholder="   Search">
+            </div>
+            <div class="sub-head-con-text">
+                <h2>WELCOME TO</h2>
+                <h2>INFORMATION TECHNOLOGY</h2>
+                <h2>E-LIBRARY</h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="page-head">
+        <h3>CATALOGUE</h3>
+        <hr>
+    </section>
+
+
+    <section id="books">
+        <div class="books-con">
+                <button onclick="openModal()" class="books-btn">Add to Catalogue</button>
+                <div id="pdfViewer"></div>
+
+                <!-- The Modal -->
+                <div id="uploadModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <label for="pdfTitle">Title:</label>
+                        <input type="text" id="pdfTitle">
+                        <label for="publisherName">Publisher Name:</label>
+                        <input type="text" id="publisherName">
+                        <label for="schoolLevel">School Level:</label>
+                        <select id="schoolLevel">
+                            <option value="100lvl">100lvl</option>
+                            <option value="200lvl">200lvl</option>
+                            <option value="300lvl">300lvl</option>
+                            <option value="400lvl">400lvl</option>
+                            <option value="500lvl">500lvl</option>
+                        </select>
+                        <label for="fileInput">Select PDF File:</label>
+                        <input type="file" id="fileInput" accept=".pdf" multiple>
+                        <button onclick="uploadPDF()">Upload</button>
+                    </div>
+                </div>
+                
+        </div>
+    </section>
+    
+    <section id="footer">
+        <div class="footer-con">
+            <p>powered by <b>Group 6</b> designers</p>
+        </div>
+    </section>
+</body>
+</html>
+<script src="menu.js"></script>
+<script src="upload.js"></script>
